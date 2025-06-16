@@ -7,7 +7,7 @@ const OpportunityList = ({ onEdit }) => {
 
   const fetchOpportunities = async () => {
     try {
-      const res = await fetch('http://localhost:3000');
+      const res = await fetch('https://inter-3bzj.onrender.com');
       if (!res.ok) throw new Error('Failed to fetch');
       const data = await res.json();
       setOpportunities(data);
@@ -27,7 +27,7 @@ const OpportunityList = ({ onEdit }) => {
     if (!confirm) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/${id}`, {
+      const res = await fetch(`https://inter-3bzj.onrender.com/${id}`, {
         method: 'DELETE',
       });
 

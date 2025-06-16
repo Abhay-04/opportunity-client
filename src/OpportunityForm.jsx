@@ -59,8 +59,8 @@ const OpportunityForm = ({ selected, onSuccess }) => {
     try {
       const method = selected ? 'PUT' : 'POST';
       const url = selected
-        ? `http://localhost:3000/${selected._id}`
-        : 'http://localhost:3000/';
+        ? `https://inter-3bzj.onrender.com/${selected._id}`
+        : 'https://inter-3bzj.onrender.com/';
 
       const res = await fetch(url, {
         method,
