@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import OpportunityForm from './opportunityForm';
-import OpportunityList from './opportunityList';
+import OpportunityForm from './OpportunityForm';
+import OpportunityList from './OpportunityList';
+
 
 
 function App() {
